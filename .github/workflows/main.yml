@@ -1,11 +1,12 @@
 name: CI
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+# 
 jobs:
   # Runs on PRs and fork pushes. The master branch of the main repo uses build-analyze instead.
   build:
